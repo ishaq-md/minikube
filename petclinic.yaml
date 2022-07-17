@@ -18,7 +18,7 @@ spec:
       containers:
       - name: petclinic
         image: ishaqmd/petclinic:latest
-	ports:
+		ports:
         - containerPort: 8080
 
 
@@ -29,8 +29,11 @@ metadata:
   name: my-service
 spec:
   selector:
+	type: NodePort
     app: petclinic
   ports:
     - protocol: TCP
       port: 8080
       targetPort: 8080
+  externalIPs:
+    - 34.170.33.220
