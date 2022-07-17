@@ -18,7 +18,7 @@ spec:
       containers:
       - name: petclinic
         image: ishaqmd/petclinic:latest
-		ports:
+	ports:
         - containerPort: 8080
 
 
