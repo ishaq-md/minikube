@@ -1,0 +1,14 @@
+version: "3"
+services:
+  web:
+    image: ishaqmd/petclinic:latest
+    ports:
+     - "8080:8080"
+    deploy:
+      replicas: 1
+      resources:
+        limits:
+          cpus: "1"
+          memory: 1000M
+      restart_policy:
+        condition: on-failure
