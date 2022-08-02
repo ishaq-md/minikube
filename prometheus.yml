@@ -10,7 +10,7 @@ scrape_configs:
 
     static_configs:
 
-    - targets: ['34.125.27.248:9090']
+    - targets: ['34.125.168.128:9090']
 
       labels:
 
@@ -20,7 +20,7 @@ scrape_configs:
 
     static_configs:
 
-    - targets: ['34.125.27.248:8081']
+    - targets: ['34.125.168.128:8081']
 
       labels:
 
@@ -30,7 +30,7 @@ scrape_configs:
 
     static_configs:
 
-    - targets: ['34.125.27.248:9100']
+    - targets: ['34.125.168.128:9100']
 
       labels:
 
@@ -40,7 +40,7 @@ scrape_configs:
 
     static_configs:
 
-    - targets: ['34.125.27.248:8080']
+    - targets: ['34.125.168.128:8080']
 
       labels:
 
