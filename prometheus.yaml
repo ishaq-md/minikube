@@ -35,3 +35,13 @@ scrape_configs:
       labels:
 
         alias: 'node-exporter'
+        
+  - job_name: 'petclinic'
+
+    static_configs:
+
+    - targets: ['34.125.27.248:8080']
+
+      labels:
+
+        alias: 'petclinic'
