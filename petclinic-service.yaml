@@ -1,4 +1,3 @@
-
 ---
 apiVersion: v1
 kind: Service
@@ -6,10 +5,10 @@ metadata:
   name: my-service
 spec:
   selector:
-	type: NodePort
     app: petclinic
+  type: NodePort
   ports:
     - protocol: TCP
-      port: 8080
+      port: 8085
       targetPort: 8080
-      nodePort: 8088
+      nodePort: 33333
