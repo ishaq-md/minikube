@@ -18,7 +18,14 @@ spec:
       containers:
       - name: petclinic
         image: ishaqmd/petclinic:latest
-		ports:
+	resources:
+      	  requests:
+            memory: "1000Mi"
+            cpu: "1000m"
+          limits:
+            memory: "1000Mi"
+            cpu: "1000m"
+	ports:
         - containerPort: 8080
 
 
