@@ -27,3 +27,12 @@ kubectl apply -f kube-state-metrics-configs/
 microk8s kubectl apply -f kube-state-metrics-configs/
 kubectl get deployments kube-state-metrics -n kube-system
 microk8s kubectl get deployments kube-state-metrics -n kube-system
+
+git clone https://github.com/bibinwilson/kubernetes-grafana.git
+cd kubernetes-grafana/
+microk8s kubectl create -f grafana-datasource-config.yaml
+microk8s kubectl create -f deployment.yaml
+microk8s kubectl create -f service.yaml 
+microk8s kubectl get service
+microk8s kubectl get namespaces
+microk8s kubectl get service -n monitoring
