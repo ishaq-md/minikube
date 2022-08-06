@@ -36,4 +36,4 @@ spec:
       port: 8080
       targetPort: 8080
   externalIPs:
-    - 34.170.33.220
+    - 34.125.7.73
